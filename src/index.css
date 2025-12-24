@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@theme {
+  --font-primary: "Rowdies", sans-serif;
+}
+.stars {
+  display: inline-flex;
+  position: relative;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.stars-background {
+  color: #ddd;
+}
+
+.stars-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #ffa500;
+}
+input[type="checkbox"] {
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+}
