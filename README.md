@@ -1,16 +1,68 @@
-# React + Vite
+# DigiMart – React E-Commerce Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DigiMart is my first React-based e-commerce application, built to understand and implement core frontend concepts such as component-based architecture, state management, filtering logic, and user interaction handling.
 
-Currently, two official plugins are available:
+This project focuses on creating a smooth shopping experience with essential e-commerce features like product filtering, cart management, and dynamic UI updates.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Product Filtering
 
-## Expanding the ESLint configuration
+- Filter products by Category
+- Filter products by Rating (and above)
+- Filter products by Price Range
+- Multiple filters can be applied at the same time
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Cart Functionality
+
+- Add products to cart
+- Increase or decrease product quantity
+- Remove products from cart
+- Dynamic cart count displayed above the cart button
+- Cart updates instantly without page reload
+
+### Ratings Display
+
+- Star-based rating UI
+- Partial star fill based on product rating value
+
+### UI and UX
+
+- Responsive layout using Tailwind CSS
+- Smooth hover and click animations
+- Clean and user-friendly interface
+- Dropdown navigation for categories
+
+---
+
+## Tech Stack
+
+- React.js
+- JavaScript (ES6+)
+- Tailwind CSS
+- Font Awesome (for basic UI icons)
+- Fake Store API (for product data)
+
+---
+
+## Project Structure
+
+```bash
+src/
+│── components/
+│   ├── Head.jsx
+│   ├── Banner.jsx
+│   ├── DigiCartModel.jsx
+│   ├── FilterCategory.jsx
+│   ├── FilterPrice.jsx
+│   ├── FilterRatings.jsx
+│   ├── Products.jsx
+
+│
+│── assets/
+│── App.jsx
+│── index.js
+│── index.css
+```
